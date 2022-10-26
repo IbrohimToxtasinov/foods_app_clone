@@ -71,6 +71,7 @@ List<Widget> pages = [
                     Text(ProductModel.gamburgers[index].price, style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w500),),
                     InkWell(
                       onTap: () {
+                        
                       },
                       child: Icon(ProductModel.gamburgers[index].isLiked ? Icons.favorite_outlined : Icons.favorite_border),
                     ),
@@ -404,7 +405,7 @@ class _HomePage1State extends State<HomePage1> {
                   child: SizedBox( 
                     height: 430,
                     width: double.infinity,
-                    child:  pages[selectedIndex],
+                    child: pages[selectedIndex],
                   ),
                 ),
               ],

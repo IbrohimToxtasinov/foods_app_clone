@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:foodsapp/models/product.dart';
 import 'package:foodsapp/screens/home_page.dart';
 import 'package:foodsapp/screens/select_page.dart';
 
@@ -12,7 +11,7 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  final List<Widget> _pages = [
+  final List<Widget> _pages = const [
     HomePage1(),
     SelectPage(),
   ];
@@ -33,14 +32,14 @@ class _MainPageState extends State<MainPage> {
             currentPageIndex = index;
           });
         },
-        items: [
-          const BottomNavigationBarItem(icon: Icon(Icons.home), label: ''),
-          const BottomNavigationBarItem(icon: Icon(Icons.search), label: ''),
-          const BottomNavigationBarItem(
+        items: const [
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: ''),
+          BottomNavigationBarItem(icon: Icon(Icons.search), label: ''),
+          BottomNavigationBarItem(
               icon: Icon(Icons.movie_creation_rounded), label: ''),
-          const BottomNavigationBarItem(
+           BottomNavigationBarItem(
               icon: Icon(Icons.favorite_border_outlined), label: ''),
-          const BottomNavigationBarItem(icon: Icon(Icons.person), label: ''),
+          BottomNavigationBarItem(icon: Icon(Icons.person), label: ''),
         ],
       ),
     );

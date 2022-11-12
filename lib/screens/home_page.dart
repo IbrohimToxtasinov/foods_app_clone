@@ -71,7 +71,6 @@ List<Widget> pages = [
                     Text(ProductModel.gamburgers[index].price, style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w500),),
                     InkWell(
                       onTap: () {
-                        
                       },
                       child: Icon(ProductModel.gamburgers[index].isLiked ? Icons.favorite_outlined : Icons.favorite_border),
                     ),
